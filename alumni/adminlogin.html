@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Login Form Example</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-form">
+        <form action = "adminLogin.php" method = "post">
+            <h1>
+                <center>Admin Login</center>
+            </h1>
+            <div class="content">
+                <div class="input-field">
+                    <input type="text" placeholder="Username" name="adminName" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password" name="adminPass" required>
+                </div>
+                <a href="#" class="link">Forgot Your Password?</a>
+                <br><a href="index.html" class="link">Login as Alumni </a>
+            </div>
+            <div class="action">
+                <input type ="submit" value = "LOG IN" class = "btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

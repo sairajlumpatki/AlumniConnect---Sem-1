@@ -1,0 +1,133 @@
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+position: fixed;
+align-items: left;
+height: 100%;
+left: 0;
+top: 0;
+width: 200px;
+overflow-x: hidden;
+
+background: #e866ea;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(232,102,234,0.5), rgba(138,74,161,0.5));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(232,102,234,0.5), rgba(138,74,161,0.5))
+
+
+}
+
+.navbar-nav {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.nav-item {
+border-bottom: 1px solid #ddd;
+}
+
+.nav-link {
+display: block;
+padding: 10px 20px;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+.nav-link:hover {
+background-color: #ddd;
+}
+
+.container-fluid {
+margin-left: 200px;
+}
+
+/* Adjust column sizes for small screens */
+@media (max-width: 768px) {
+.navbar {
+width: 100%;
+height: auto;
+position: relative;
+}
+
+.container-fluid {
+margin-left: 0;
+}
+
+.col-lg-2 {
+display: none;
+}
+}
+
+.top-bar {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.top-bar p {
+font-size: 18px;
+margin: 0;
+}
+
+.top-bar .username {
+font-weight: bold;
+}
+
+.top-bar {
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 50px;
+padding: 0 20px;
+}
+
+.welcome-message {
+font-size: 18px;
+font-weight: bold;
+}
+
+.logout-button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.logout-button:hover {
+background-color: #3e8e41;
+}
+
+.student-details{
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+}

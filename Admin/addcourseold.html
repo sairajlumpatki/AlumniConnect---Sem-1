@@ -1,0 +1,70 @@
+<html>
+    <title>Course Management</title>
+<head >
+  <style>body {
+    padding: 10;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    background-color: #e3e3e3;
+      }
+    .container {
+        background-color: gray;
+        text-align: center;
+        width: 800px;
+        margin:0 auto;
+        box-shadow: 10px 10px 5px #aaaaaa;
+        padding:20px 5px;
+      }
+  .info{
+    text-align:left;
+    font-weight:600;
+    padding-bottom:10px; 
+  }
+  .contact-form{
+    padding:20px 50px;
+    margin: 0 auto;
+  }
+  input, 
+  select option, 
+  select{
+    width: 100%;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+  }
+  
+  .btn{
+    padding:5px 10px;
+    background-color:#C1E1C1;
+    border-color:#C1E1C1;
+  }</style>
+  
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form" method="post" action="addcourse.php">
+          <div class="info">
+            <div>Course Name:</div>
+            <div><input type="text" placeholder="Enter Course Name" name="course_name"></div>
+          </div>
+          <div class="info">
+            <div>Course Description:</div>
+           <div><textarea cols="70" rows="10", placeholder="Enter the Course Description here" name="course_description"></textarea></div> 
+          </div>
+          <div class="info">
+            <div>Start date of Course:</div>
+            <div><input type="date" name="course_start"></div>
+          </div>
+          <div class="info">
+            <div>Course Duration (In Months):</div>
+            <div><input type="text" name="course_duration"></div>
+          </div>
+          <button type="Save" value="Save" class="btn" name="Add_Course">Add Course</button>
+        </form>
+    </div>
+    
+</body>
+</html>

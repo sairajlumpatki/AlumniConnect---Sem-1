@@ -1,0 +1,99 @@
+<html>
+  <title>Forum Management</title>
+<head >
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #003366;
+    margin-top: 30px;
+  }
+  
+  /* Form styles */
+  
+  form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  input[type="date"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  } 
+  button {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  } 
+  </style>
+  
+</head>
+<body>
+  <button class="button" onclick=location.href="adminHome.html">Home</button>
+  <header>
+    <h1> Add Forum</h1>
+  </header>
+    <div class="container">
+<!--       form starts -->
+        <form class="contact-form" method="post" action="insertForum.php">
+          <div class="info">
+            <div>Forum Title:</div>
+            <div><input type="text" placeholder="Enter Forum title" name="forum_title" required></div>
+          </div>
+          <div class="info">
+            <div>Forum Description :</div>
+            <div><textarea cols="70" rows="10", placeholder="Enter Forum Description here" name="forum_description" required></textarea></div>
+          </div>
+         <p><center><input type="submit" value="Add Forum" name="add_forum"></center></p>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* body{
+    background-color: #e35869;
+    align-items: center;
+
+}
+
+ul{
+    width:300px;
+align-items: center;
+    align-content: center;
+    list-style:none;
+    padding:0;
+    text-align:center;
+    overflow:auto;
+  }
+  ul > li{
+    align-items: center;
+
+    margin:20px;
+    padding: 40;
+ 
+
+  }
+  li span{
+    align-items: center;
+
+    display:block;
+    clear:both;
+    background:#ffffff;
+    padding:15px 0;
+  }
+  ul ul li{
+    align-items: center;
+
+    float:left;
+    width:90px;
+    margin:15px 15px 0 0;
+  }
+  ul ul li:nth-child(3){
+    margin-right:0;
+  }
+  ul li a{
+    background:#ffffff;
+    display:block;
+    width:100%;
+    padding:15px 0;
+  } */
+
+
+
+
+  /* adminHome.css */
+
+/* Style for the body element */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Style for the ul and li elements */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+/* Style for the h2 element */
+h2 {
+  color: #fff;
+  margin: 0;
+  padding: 15px;
+}
+
+/* Style for the a element */
+a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #111;
+}
+
+/* Style for the span element */
+span {
+  display: inline-block;
+}
+
+/* Style for the nested ul element */
+ul ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+/* Style for the nested li elements */
+li li {
+  float: none;
+  width: 100%;
+}
+
+li:hover {
+  background-color: #111;
+}
+
+/* Style for the active link */
+.active {
+  background-color: #4CAF50;
+}

@@ -1,0 +1,64 @@
+
+                  
+                body{
+
+                    background-color: #2C3E50;
+                }
+
+                .card-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin: 50px auto;
+                    max-width: 1000px;
+                    background-color: #2C3E50;
+                    background-image: linear-gradient(to bottom, #2C3E50, #34495E);
+                   
+                  }
+                  
+                  .card {
+                    background-color: #34495E;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+                    padding: 20px;
+                    margin: 20px;
+                    max-width: 300px;
+                    width: 100%;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  }
+                  
+                  .card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+                  }
+                  
+                  .card-title {
+                    font-size: 24px;
+                    margin: 0;
+                    color: #fff;
+                  }
+                  
+                  .card p {
+                    font-size: 16px;
+                    margin: 10px 0;
+                    color: #eee;
+                  }
+                  
+                  .apply-button {
+                    display: inline-block;
+                    background-color: #3498DB;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                  }
+                  
+                  .apply-button:hover {
+                    background-color: #2980B9;
+                  }
+                  
+    
+     
+                

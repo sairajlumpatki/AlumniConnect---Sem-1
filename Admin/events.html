@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Registration</title>
+</head>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1 {
+	text-align: center;
+	color: #003366;
+	margin-top: 30px;
+}
+
+/* Form styles */
+
+form {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 30px;
+	width: 80%;
+	margin: auto;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #003366;
+}
+
+input[type="text"], textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+input[type="date"], textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #003366;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+} 
+
+input[type="number"], textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+button {
+	background-color: #003366;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+} 
+</style>
+<body>
+
+    <body onload="logoBeat()" style="font-family: 'Sora', sans-serif;"></body>
+    <div class="container">
+
+        <button class="button" onclick=location.href="adminHome.html">Home</button>
+        <h1>Event Registration</h1>
+        <form action="events.php" method="post">
+            <form class="contact-form">
+            <label for="eventName">Event Name:</label>
+            <input type="text" placeholder="Enter Event Name" id="eventName" name="ename" required>
+
+            <label for="eventDescription">Event Description:</label>
+            <textarea id="eventDescription" placeholder="Enter the Event Description here" name="edesc" rows="4"
+                cols="50" required></textarea>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="doe" placeholder="Date of Event" required>
+
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" name="etime" required>
+
+            <label for="eventDuration">Event Duration:(In days)</label>
+            <input type="number" id="eventDuration" placeholder="Number of Days" name="duration" required>
+
+            <label for="eventLocation">Event Location:</label>
+            <input type="text" placeholder="Place of Event" id="eventLocation" name="location" required>
+            </select>
+
+            <p><center><input type="submit" value="Add Event" name="Add_Event"></center></p>
+        </form>
+    </div>
+</body>
+
+</html>

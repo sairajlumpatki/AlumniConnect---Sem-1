@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255,255,255,0.2);
+}
+
+h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 48px;
+    color: #1b1b1b;
+    text-shadow: 2px 2px #e6e6e6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-listing {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.job-listing:hover {
+    box-shadow: 0px 0px 20px blue;
+    transform: translateY(-5px);
+}
+
+.job-listing h2 {
+    font-size: 24px;
+    color: #1b1b1b;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.job-listing h3 {
+    font-size: 18px;
+    color: #1b1b1b;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.job-listing p {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.job-listing .salary {
+    font-size: 20px;
+    color: #1b1b1b;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.job-listing .location {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+}
+
+.pulse-button {
+    animation: pulse 2s linear infinite;
+}
+

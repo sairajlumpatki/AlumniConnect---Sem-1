@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alumni Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+
+body {
+      background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(admindash.jpg) no-repeat;
+      background-size: 140%;
+      background-position: center;
+      
+    }
+      .tile-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      #approve{
+      background-image: url('approve.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #profile{
+      background-image: url('alumni.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+      #job{
+      background-image: url('job.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #courses{
+      background-image: url('course.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #events{
+      background-image: url('events.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+
+     
+    #forum{
+      background-image: url('forum.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+      .tile {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+ 
+      .tile a {
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+
+      .tile:hover {
+        transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 70px rgba(255, 255, 255, 0.5);
+      }
+
+      body {
+        background-color: #1f2d3d;
+        font-family: sans-serif;
+        color: #fff;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+
+   
+      .logout-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+      .logout-button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin Dashboard</h1>
+    <br><br><br><br>
+    <button class="logout-button" onclick="location.href='logout.php';">Logout</button>
+    
+    <div class="tile-container">
+      <div class="tile" id="approve" onclick="location.href='#';">
+        <a href="alumniRegList.php"></a>
+      </div>
+     <!-- <div class="tile" id="profile" onclick="location.href='#';">
+        <a href="alumniRegList.php"></a>
+      </div>-->
+      <div class="tile" id="events" onclick="location.href='eventOperations.html';">
+        <a href="#"></a>
+      </div>
+      <div class="tile" id="job" onclick="location.href='jobOperations.html';">
+        <a href="#"></a>
+      </div>
+      <div class="tile" id="courses" onclick="location.href='courseOperations.html';">
+        <a href="#"></a>
+      </div>
+      <div class="tile" id="forum" onclick="location.href='forumOperations.html';">
+        <a href="#"></a>
+      </div>
+    </div>
+    
+  
+
+    <script>
+      
+      const tiles = document.querySelectorAll('.tile');
+      tiles.forEach(tile => {
+        tile.addEventListener('click', () => {
+          const link = tile.querySelector('a').href;
+          location.href = link;
+        });
+      });
+    </script>
+  </body>
+</html>
